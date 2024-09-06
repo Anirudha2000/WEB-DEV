@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <section id="rules">
+      <h2><u>Rules to Play, How?</u></h2>
+      <br>
+      <p>
+        Our Childhood hand game rock-paper-scissors is a game played by us to
+        enjoy our time. It is stated that it is also <br />
+        used to clear disputes between persons.<br />
+        This game is played in a series of rounds and the one who wins most
+        rounds wins the game.
+      </p>
+      <p>
+        <br>All you need to know is:<b><br />-Rock(👊) beats scissors(✌)<br />-Scissors(✌)
+          beats paper(🖐)<br />-Paper(🖐) beats rock(👊)</b></b>
+      </p>
+      <input type="button" value="CLOSE" />
+    </section>
+
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="scissors.png" />
+      </div>
+    </div>
+
+    <div class="scoreBoard">
+      <div class="score">
+        <p id="userScore">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="compScore">0</p>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <div class="msgContainer">
+      <div class="msg">Play your Move!</div>
+    </div>
+
+    <button id="resetbtn">Reset Score</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

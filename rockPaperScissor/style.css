@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #100007;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+
+#rules {
+  background: #100303;
+  color: #dedede;
+  width: 5rem;
+  min-width: 800px;
+  height: 31rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 1.5rem;
+  top: 15%;
+  animation: rgb-border 3s infinite;
+}
+
+#rules input {
+  background: rgb(240, 8, 8);
+  font-size: 1.5rem;
+  animation: rgb-border 3s infinite;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+}
+
+@keyframes rgb-border {
+  0% {
+    border-left: 2px solid #e2df19;
+    border-bottom: 2px solid #e9530e;
+    border-right: 2px solid #11f74a;
+    border-top: 2px solid #3514f1;
+  }
+  25% {
+    border-left: 2px solid #3514f1;
+    border-bottom: 2px solid #e2df19;
+    border-right: 2px solid #e9530e;
+    border-top: 2px solid #11f74a;
+  }
+  50% {
+    border-left: 2px solid #11f74a;
+    border-bottom: 2px solid #3514f1;
+    border-right: 2px solid #e2df19;
+    border-top: 2px solid #e9530e;
+  }
+  75% {
+    border-left: 2px solid #e9530e;
+    border-bottom: 2px solid #11f74a;
+    border-right: 2px solid #3514f1;
+    border-top: 2px solid #e2df19;
+  }
+  100% {
+    border-left: 2px solid #e2df19;
+    border-bottom: 2px solid #e9530e;
+    border-right: 2px solid #11f74a;
+    border-top: 2px solid #3514f1;
+  }
+}
+
+
+
+.choice {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 5px solid black;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 20px;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+#userScore,
+#compScore {
+  font-size: 4rem;
+}
+
+.msgContainer {
+  margin-top: 3rem;
+}
+
+.msg {
+  background-color: #4c3b4d;
+  color: white;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#resetbtn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #80d39b;
+  color: rgb(1, 0, 0);
+  border-radius: 1rem;
+  border: none;
+  margin-top: 2rem;
+  border: 5px solid black;
+}
+#resetbtn:hover {
+  background-color: rgb(237, 5, 5);
+  color: white;
+  cursor: pointer;
+}
